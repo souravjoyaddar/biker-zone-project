@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -18,16 +18,77 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Poppins font style -->
+    <!-- Poppins font integration -->
     <style>
       .poppins-font {
         font-family: "Poppins", serif;
       }
     </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              "bike-primary": "#E76F51",
+            },
+          },
+        },
+      };
+    </script>
   </head>
   <body class="poppins-font">
-    <header>
-      <nav></nav>
+    <header class="md:container md:mx-auto">
+      <!-- Navbar section starts -->
+      <nav>
+        <div class="navbar bg-base-100">
+          <div class="flex-1">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              >
+                <li class="text-base font-medium"><a>Home</a></li>
+                <li class="text-base font-medium"><a>Shop</a></li>
+                <li class="text-base font-medium"><a>News</a></li>
+                <li class="text-base font-medium"><a>Contact</a></li>
+              </ul>
+            </div>
+            <a class="font-bold text-4xl">Biker Zone</a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li class="text-base font-medium"><a>Home</a></li>
+              <li class="text-base font-medium"><a>Shop</a></li>
+              <li class="text-base font-medium"><a>News</a></li>
+              <li class="text-base font-medium"><a>Contact</a></li>
+            </ul>
+          </div>
+          <div class="">
+            <a
+              class="btn w-40 h-16 text-xl text-white font-bold bg-bike-primary"
+              >Login</a
+            >
+          </div>
+        </div>
+      </nav>
+      <!-- Navbar section ends -->
     </header>
     <main></main>
     <footer></footer>
