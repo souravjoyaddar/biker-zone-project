@@ -83,7 +83,7 @@
           </div>
           <div>
             <a
-              class="btn w-40 h-16 text-xl text-white font-bold bg-bike-primary"
+              class="btn w-36 h-14 rounded-md text-xl text-white font-bold bg-bike-primary"
               >Login</a
             >
           </div>
@@ -95,7 +95,7 @@
       <div class="carousel w-full lg:h[550px] bg-bike-primary-bg">
         <!-- slide 1 -->
         <div id="slide1" class="carousel-item relative w-full">
-          <div class="flex flex-col lg:flex-row p-12 lg:p-24">
+          <div class="flex flex-col lg:flex-row lg:gap-28 p-12 lg:p-24">
             <!-- text content -->
             <div class="space-y-6">
               <h2 class="font-bold text-6xl">
@@ -110,7 +110,7 @@
               </p>
               <button>
                 <a
-                  class="btn w-40 h-16 text-xl text-white font-bold bg-bike-primary"
+                  class="btn w-36 h-14 rounded-md text-xl text-white font-bold bg-bike-primary"
                   >Purchase</a
                 >
               </button>
@@ -130,7 +130,7 @@
 
         <!-- slide 2 -->
         <div id="slide2" class="carousel-item relative w-full">
-          <div class="flex flex-col lg:flex-row p-12 lg:p-24">
+          <div class="flex flex-col lg:flex-row lg:gap-28 p-12 lg:p-24">
             <!-- text content -->
             <div class="space-y-6">
               <h2 class="font-bold text-6xl">
@@ -145,7 +145,7 @@
               </p>
               <button>
                 <a
-                  class="btn w-40 h-16 text-xl text-white font-bold bg-bike-primary"
+                  class="btn w-36 h-14 rounded-md text-xl text-white font-bold bg-bike-primary"
                   >Purchase</a
                 >
               </button>
@@ -165,7 +165,7 @@
 
         <!-- slide 3 -->
         <div id="slide3" class="carousel-item relative w-full">
-          <div class="flex flex-col lg:flex-row p-12 lg:p-24">
+          <div class="flex flex-col lg:flex-row lg:gap-28 p-12 lg:p-24">
             <!-- text content -->
             <div class="space-y-6">
               <h2 class="font-bold text-6xl">
@@ -180,7 +180,7 @@
               </p>
               <button>
                 <a
-                  class="btn w-40 h-16 text-xl text-white font-bold bg-bike-primary"
+                  class="btn w-36 h-14 rounded-md text-xl text-white font-bold bg-bike-primary"
                   >Purchase</a
                 >
               </button>
@@ -200,7 +200,7 @@
 
         <!-- slide 4 -->
         <div id="slide4" class="carousel-item relative w-full">
-          <div class="flex flex-col lg:flex-row p-12 lg:p-24">
+          <div class="flex flex-col lg:flex-row lg:gap-28 p-12 lg:p-24">
             <!-- text content -->
             <div class="space-y-6">
               <h2 class="font-bold text-6xl">
@@ -215,7 +215,7 @@
               </p>
               <button>
                 <a
-                  class="btn w-40 h-16 text-xl text-white font-bold bg-bike-primary"
+                  class="btn w-36 h-14 rounded-md text-xl text-white font-bold bg-bike-primary"
                   >Purchase</a
                 >
               </button>
@@ -235,8 +235,10 @@
       </div>
     </header>
     <main>
-      <section class="md:container md:mx-auto my-36">
-        <!-- featured bikes section -->
+      <!-- main section starts -->
+
+      <!-- featured bikes section -->
+      <section class="md:container md:mx-auto my-36 md:px-24">
         <div class="text-center">
           <h2 class="font-semibold text-5xl mb-[2px]">
             Featured Bikes In This Year
@@ -244,9 +246,24 @@
           <p class="font-semibold text-[14px] text-bike-primary">
             Best bike collections
           </p>
-          <hr class="max-w-14 mx-auto h-0.5 bg-bike-primary" />
+          <hr class="max-w-14 mx-auto h-[1px] bg-bike-primary" />
+        </div>
+        <!-- featured bike images -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-32 mt-12">
+          <img
+            src="./assets/others/feature-bike.png"
+            class="grayscale"
+            alt=""
+          />
+          <img src="./assets/others/feature-bike.png" alt="" />
+          <img
+            src="./assets/others/feature-bike.png"
+            class="grayscale"
+            alt=""
+          />
         </div>
       </section>
+      <!-- Latest news section starts -->
     </main>
     <footer></footer>
   </body>
